@@ -21,14 +21,6 @@ export const Lesson05 = () => {
             <div className={styles.playground}>
                 <div className={styles.section}>
                     <div className={styles.row}>
-                        <Box text="N" color={'lavender'} className={styles.margin} id="margin" />
-                        <Box text="I" color={'lavender'} className={styles.margin} />
-                        <Box text="C" color={'lavender'} className={styles.margin} />
-                        <Box text="E" color={'lavender'} className={styles.margin} />
-                    </div>
-                </div>
-                <div className={styles.section}>
-                    <div className={styles.row}>
                         <Box
                             text="Give me some space"
                             color={'turquoiseGreen'}

@@ -76,13 +76,6 @@ export const Lesson07 = () => {
                 <Box outlined color="pastelPink" icon="heartOutline" className={styles.icon} />
                 <Box
                     outlined
-                    color={getColor(0)}
-                    icon="arrow"
-                    className={styles.icon}
-                    iconDirection="right"
-                />
-                <Box
-                    outlined
                     color={getColor(1)}
                     icon="arrow"
                     className={styles.icon}
@@ -93,7 +86,7 @@ export const Lesson07 = () => {
                     color={getColor(2)}
                     icon="arrow"
                     className={styles.icon}
-                    iconDirection="up"
+                    iconDirection="down"
                 />
                 <Box
                     outlined
@@ -104,17 +97,25 @@ export const Lesson07 = () => {
                 />
                 <Box
                     outlined
-                    color={getColor(4)}
+                    color={getColor(0)}
                     icon="arrow"
                     className={styles.icon}
                     iconDirection="right"
+                    align="right"
+                />
+                <Box
+                    outlined
+                    color={getColor(4)}
+                    icon="arrow"
+                    className={styles.icon}
+                    iconDirection="down"
                 />
                 <Box
                     outlined
                     color={getColor(5)}
                     icon="arrow"
                     className={styles.icon}
-                    iconDirection="left"
+                    iconDirection="right"
                 />
                 <Box
                     outlined
@@ -123,7 +124,6 @@ export const Lesson07 = () => {
                     className={styles.icon}
                     iconDirection="right"
                 />
-                <Box outlined color="pastelPink" icon="heart" className={styles.icon} />
                 <ConfettiFx
                     maxParticles={200}
                     show={solutionStatus.solved}
@@ -131,6 +131,7 @@ export const Lesson07 = () => {
                         display: solutionStatus.solved ? 'block' : 'none',
                     }}
                 />
+                <Box outlined color="pastelPink" icon="heart" className={styles.icon} />
             </div>
         </div>
     );
